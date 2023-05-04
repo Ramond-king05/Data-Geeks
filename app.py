@@ -154,7 +154,7 @@ elif choice == "MultiVerse":
 
 else:
     st.subheader("ABOUT THE APP")
-    st.text('''
+    st.write('''
     The Multilingual Bible app is a powerful tool that can help people from different 
     linguistic backgrounds to access and read the Bible in their native languages.
     The app can provide access to the Bible in multiple languages, making it easier 
