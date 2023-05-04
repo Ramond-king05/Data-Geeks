@@ -204,7 +204,7 @@ else:
     transformative power of His word. This can be a deeply rewarding experience, 
     both for us and for the people whose lives are touched by your app.
     ''')
-    st.text("A BIBLE SCAN APP")
+    st.text("A MULTILINGUAL BIBLE APP")
     st.text("POWERED BY:DATA-GEEKS")
     st.image("MY LOGO.jpg")
     st.success("DATA-GEEKS PROJECT")
