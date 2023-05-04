@@ -155,22 +155,32 @@ elif choice == "MultiVerse":
 else:
     st.subheader("ABOUT THE APP")
     st.text('''
-    The Multilingual Bible app is a powerful tool that can help people from different linguistic backgrounds to access and read the Bible in their native languages.
- The app can provide access to the Bible in multiple languages, making it easier for people to study and understand the Word of God.
-
-One of the primary benefits of a multilingual Bible app is that it can help to break down language barriers that may exist among different communities.
- It can provide a platform for people to come together and share their faith, regardless of their language. This can help to create a sense of unity and fellowship, 
-and promote a deeper understanding of the diversity that exists within the body of Christ.
-
-Moreover, a multilingual Bible app can be especially useful for missionaries and evangelists who are working in areas where multiple languages are spoken.
- It can allow them to easily share the gospel with people in their own language, thereby making it more accessible and relatable.
-
-In addition, a multilingual Bible app can also be a great resource for language learners who are studying a particular language.
- It can provide a platform for them to practice reading and understanding the Bible in that language, 
-thereby improving their language skills while also deepening their understanding of the Word of God.
-
-Overall, a multilingual Bible app has the potential to reach a wide audience and help people from different backgrounds and language groups to connect with
- God's Word in a more meaningful way.
+    The Multilingual Bible app is a powerful tool that can help people from different 
+    linguistic backgrounds to access and read the Bible in their native languages.
+    The app can provide access to the Bible in multiple languages, making it easier 
+    for people to study and understand the Word of God.
+    
+    One of the primary benefits of a multilingual Bible app is that it can help
+    to break down language barriers that may exist among different communities.
+    It can provide a platform for people to come together and share their faith,
+    regardless of their language. This can help to create a sense of unity and 
+    fellowship, and promote a deeper understanding of the diversity that exists 
+    within the body of Christ.
+    
+   Moreover, a multilingual Bible app can be especially useful for missionaries
+   and evangelists who are working in areas where multiple languages are spoken.
+   It can allow them to easily share the gospel with people in their own language,
+   thereby making it more accessible and relatable.
+   
+   In addition, a multilingual Bible app can also be a great resource for language
+   learners who are studying a particular language.
+   It can provide a platform for them to practice reading and understanding the 
+   Bible in that language,thereby improving their language skills while also 
+   deepening their understanding of the Word of God.
+   
+   Overall, a multilingual Bible app has the potential to reach a wide audience
+   and help people from different backgrounds and language groups to connect with
+   God's Word in a more meaningful way.
     ''')
 
     #image = Image.open("MY LOGO.jpg")
