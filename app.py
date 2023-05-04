@@ -186,7 +186,24 @@ else:
     #image = Image.open("MY LOGO.jpg")
 
     #st.image(image,caption=None, width=490, use_column_width=1, clamp=False, channels="RGB", output_format="auto")
-    st.subheader("ABOUT THE APP")
+    st.subheader("MOTIVE BEHIND THE APP")
+    st.write('''
+    One wonderful motive for creating the Multiligual Bible app is the desire to make
+    the Bible more accessible and convenient for people to read and study.
+    The Bible is a timeless and powerful source of wisdom and inspiration, but many 
+    people find it difficult to access or to carry a physical Bible with them
+    at all times.
+    
+    By creating the Multiligual  Bible app, we can help people overcome these 
+    barriers and bring the message of the Bible to more people than ever before.
+    
+    Finally, creating the Multiligual Bible app will be a wonderful way to use our 
+    skills and talents to serve others. 
+    By combining our knowledge of technology with our passion for the Bible, 
+    we  created a tool that helps people to connect with God and experience the 
+    transformative power of His word. This can be a deeply rewarding experience, 
+    both for us and for the people whose lives are touched by your app.
+    ''')
     st.text("A BIBLE SCAN APP")
     st.text("POWERED BY:DATA-GEEKS")
     st.image("MY LOGO.jpg")
