@@ -179,8 +179,8 @@ Overall, a multilingual Bible app has the potential to reach a wide audience and
     st.subheader("ABOUT THE APP")
     st.text("A BIBLE SCAN APP")
     st.text("POWERED BY:DATA-GEEKS")
-    st.image("MY LOGO.png")
-    st.success("RAYTECH PROJECT")
+    st.image("MY LOGO.jpg")
+    st.success("DATA-GEEKS PROJECT")
     st.balloons()
     
    
