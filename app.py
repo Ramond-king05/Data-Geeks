@@ -195,7 +195,7 @@ else:
     By combining our knowledge of technology with our passion for the Bible, 
     we  created a tool that helps people to connect with God and experience the 
     transformative power of His word. This can be a deeply rewarding experience, 
-    both for us and for the people whose lives are touched by your app.
+    both for us and for the people whose lives are touched by our app.
     ''')
     st.text("A BIBLE APP")
     st.text("POWERED BY:DATA_GEEKS")
