@@ -26,7 +26,7 @@ def load_bible(data): # function to load bible
 	df = pd.read_csv(data)
 	return df
 
-st.title("Multilingual Bible App")
+st.title("Bible App")
 
 menu = ["Home","MultiVerse","About"]
 df = load_bible("data/KJV.csv")
@@ -155,32 +155,25 @@ elif choice == "MultiVerse":
 else:
     st.subheader("ABOUT THE APP")
     st.write('''
-    The Multilingual Bible app is a powerful tool that can help people from different 
-    linguistic backgrounds to access and read the Bible in their native languages.
-    The app can provide access to the Bible in multiple languages, making it easier 
-    for people to study and understand the Word of God.
-    
-    One of the primary benefits of a multilingual Bible app is that it can help
-    to break down language barriers that may exist among different communities.
-    It can provide a platform for people to come together and share their faith,
-    regardless of their language. This can help to create a sense of unity and 
-    fellowship, and promote a deeper understanding of the diversity that exists 
-    within the body of Christ.
-    
-   Moreover, a multilingual Bible app can be especially useful for missionaries
-   and evangelists who are working in areas where multiple languages are spoken.
-   It can allow them to easily share the gospel with people in their own language,
-   thereby making it more accessible and relatable.
-   
-   In addition, a multilingual Bible app can also be a great resource for language
-   learners who are studying a particular language.
-   It can provide a platform for them to practice reading and understanding the 
-   Bible in that language,thereby improving their language skills while also 
-   deepening their understanding of the Word of God.
-   
-   Overall, a multilingual Bible app has the potential to reach a wide audience
-   and help people from different backgrounds and language groups to connect with
-   God's Word in a more meaningful way.
+    A Bible app is a digital platform designed to allow users to access the Bible and
+    other faith-based resources from their mobile devices,
+    tablets, or computers. The app typically contains the full text of the Bible,
+    as well as a range of features that help users engage with the text in new and 
+    meaningful ways.
+
+    One of the key benefits of a Bible app is that it provides users with a convenient
+    and portable way to access the Bible, no matter where they are.
+    Whether they are on the go, traveling, or simply don't have a physical copy of the
+    Bible with them, the app allows them to access the text at any time.
+
+    In addition to providing easy access to the Bible, many Bible apps also offer a 
+    range of features to help users engage with the text in new and meaningful ways. 
+
+    This can include features such as bookmarking, highlighting, note-taking, and search functionality.
+    Overall, a Bible app can be a valuable tool for those looking to deepen their understanding 
+    and practice of their faith.
+    By providing easy access to the Bible and a range of features to help users engage with the text, 
+    the app can help users to grow spiritually and connect with their faith in new and meaningful ways.
     ''')
 
     #image = Image.open("MY LOGO.jpg")
@@ -188,23 +181,23 @@ else:
     #st.image(image,caption=None, width=490, use_column_width=1, clamp=False, channels="RGB", output_format="auto")
     st.subheader("MOTIVE BEHIND THE APP")
     st.write('''
-    One wonderful motive for creating the Multiligual Bible app is the desire to make
+    One wonderful motive for creating the  Bible app is the desire to make
     the Bible more accessible and convenient for people to read and study.
     The Bible is a timeless and powerful source of wisdom and inspiration, but many 
     people find it difficult to access or to carry a physical Bible with them
     at all times.
     
-    By creating the Multiligual  Bible app, we can help people overcome these 
+    By creating the Bible app, we can help people overcome these 
     barriers and bring the message of the Bible to more people than ever before.
     
-    Finally, creating the Multiligual Bible app will be a wonderful way to use our 
+    Finally, creating the  Bible app will be a wonderful way to use our 
     skills and talents to serve others. 
     By combining our knowledge of technology with our passion for the Bible, 
     we  created a tool that helps people to connect with God and experience the 
     transformative power of His word. This can be a deeply rewarding experience, 
     both for us and for the people whose lives are touched by your app.
     ''')
-    st.text("A MULTILINGUAL BIBLE APP")
+    st.text("A BIBLE APP")
     st.text("POWERED BY:DATA-GEEKS")
     st.image("MY LOGO.jpg")
     st.success("DATA-GEEKS PROJECT")
