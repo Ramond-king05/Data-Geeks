@@ -198,9 +198,9 @@ else:
     both for us and for the people whose lives are touched by your app.
     ''')
     st.text("A BIBLE APP")
-    st.text("POWERED BY:DATA-GEEKS")
+    st.text("POWERED BY:DATA_GEEKS")
     st.image("MY LOGO.jpg")
-    st.success("DATA-GEEKS PROJECT")
+    st.success("DATA_GEEKS PROJECT")
     st.balloons()
     
    
