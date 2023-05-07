@@ -34,17 +34,23 @@ st.title("Bible App")
 menu = ["Home","MultiVerse","About"]
 df = load_bible("data/KJV.csv")
 
-co = cohere.Client(cohere_key)  # This is your trial API key
 
-response = co.embed(
-    model='large',
-    texts=[" \"I like Football\"", "I like computer science and AI ", "I studied political science "])
-# print('Embeddings: {}'.format(response.embeddings))
-np_embedding = np.array(response.embeddings)
-print(np_embedding.shape)
-# np.save("co_embedding",np_embedding)
+co = cohere.Client(cohere_key) # This is your trial API key
 
+# Temperature is a configuration hyperparameter that controls the randomness of language
+# model output. A high temperature produces more unpredictable and creative results, 
+# while a low temperature produces more common and conservative output. 
+# https://txt.cohere.com/llm-parameters-best-outputs-language-ai/
 
+response = co.generate(
+  model='command-xlarge-nightly',
+  prompt='Write a body paragraph about \"My promotion to the head of HR in my company\" in a blog post titled \"My 2023 promotion\"',
+  max_tokens=300,
+  temperature=0.9,
+  k=0,
+  stop_sequences=[],
+  return_likelihoods='NONE')
+print('Prediction: {}'.format(response.generations[0].text))
 
 
 choice = st.sidebar.selectbox("Menu",menu)
