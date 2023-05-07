@@ -1,4 +1,2 @@
 # Thou shall not steal
-cohere_key = 'Uzych0MIKQMZxR1yYOvaxQDSvqC2q63nnNUv7Sxm
-'
-
+cohere_key = 'PdOV6q3tmmavDhAjdtDi5eoIFjFjyOyEQXNVxNGW'
