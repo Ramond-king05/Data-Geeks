@@ -17,6 +17,8 @@ import altair as alt
 import streamlit.components.v1 as stc
 import neattext.functions as nfx
 import cohere
+from config import cohere_key
+
 from template import HTML_RANDOM_TEMPLATE,render_entities,get_tags,mytag_visualizer,plot_mendelhall_curve,plot_word_freq_with_altair,get_most_common_tokens
 
 
@@ -31,15 +33,16 @@ st.title("Bible App")
 menu = ["Home","MultiVerse","About"]
 df = load_bible("data/KJV.csv")
 
-co = cohere.Client('Hxw2IiJ8xzSnwPzmL38pYTzrwEj0LTOWwnD1uu1o')  
-texts = [  
-   'Hello from Cohere!', 'مرحبًا من كوهير!', 'Hallo von Cohere!',  
-   'Bonjour de Cohere!', '¡Hola desde Cohere!', 'Olá do Cohere!',  
-   'Ciao da Cohere!', '您好，来自 Cohere！', 'कोहेरे से नमस्ते!'  
-]  
-response = co.embed(texts=texts, model='embed-multilingual-v2.0')  
-embeddings = response.embeddings # All text embeddings 
-print(embeddings[0][:5]) # Print embeddings for the first text
+co = cohere.Client(cohere_key) # This is your trial API key
+response = co.generate(
+  model='command-xlarge-nightly',
+  prompt='Write a body paragraph about \"My promotion to the head of HR in my company\" in a blog post titled \"My 2023 promotion\"',
+  max_tokens=300,
+  temperature=0.9,
+  k=0,
+  stop_sequences=[],
+  return_likelihoods='NONE')
+print('Prediction: {}'.format(response.generations[0].text))
 
 
 
@@ -212,5 +215,5 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
- 
+
 
